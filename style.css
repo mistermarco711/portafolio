@@ -7,18 +7,28 @@
 body{
     background-color: #000000;
     color: #F6F6F6;
-    height: 100vh;
     box-sizing: border-box;
 }
 
-.titulo-destaque{
-    color: #22D4FD;
+.header{
+    padding: 2% 0 0 15%;
 }
 
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #22D4FD;
+}
 .presentacion{
+    padding: 7% 15%;
     display: flex;
     align-items: center;
-    margin: 10% 5%;
     justify-content: space-between;
 }
 
@@ -34,6 +44,9 @@ body{
     font-size: 36px;
 }
 
+.titulo-destaque{
+    color: #22D4FD;
+}
 .presentacion__contenido__texto{
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
@@ -72,4 +85,14 @@ body{
 .presentacion__enlaces__links:hover{
     background-color: #272727;
 
+}
+
+.footer{
+    background-color: #22D4FD;
+    padding: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
 }
