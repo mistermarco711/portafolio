@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario:  #22D4FD;
+    --color-hover: #272727;
+    --fuente-monserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     box-sizing: border-box;
 }
 
@@ -20,10 +29,12 @@ body{
 }
 
 .header__menu__link{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-monserrat);
     font-size: 36px;
     font-weight: 600;
-    color: #22D4FD;
+    text-decoration: none;
+    color: var(--color-terciario);
+    
 }
 .presentacion{
     padding: 7% 15%;
@@ -40,16 +51,16 @@ body{
 }
 
 .presentacion__contenido__titulo{
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 36px;
 }
 
 .titulo-destaque{
-    color: #22D4FD;
+    color: var(--color-terciario);
 }
 .presentacion__contenido__texto{
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-monserrat);
 }
 
 .presentacion__enlaces{
@@ -61,7 +72,7 @@ body{
 }
 
 .presentacion__enlaces__subtitulo{
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 24px;
     font-weight: 400;
 }
@@ -70,29 +81,29 @@ body{
     width: 378px;
     text-align: center;
     padding: 21.5px 0px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-monserrat);
     font-size: 24px;
     font-weight: 600;
-    color: #F6F6F6;
+    color: var(--color-secundario);
     text-decoration: none;
     border-radius: 8px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--color-terciario);
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 
 .presentacion__enlaces__links:hover{
-    background-color: #272727;
+    background-color: var(--color-hover);
 
 }
 
 .footer{
-    background-color: #22D4FD;
+    background-color: var(--color-terciario);
     padding: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-monserrat);
     font-weight: 400;
     text-align: center;
     font-size: 24px;
-    color: #000000;
+    color: var(--color-primario);
 }
